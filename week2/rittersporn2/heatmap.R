@@ -1,4 +1,4 @@
-### make a data frame with gene expression values. The gene IDs should be in row names.
+### make a data frame with gene expression values. The gene IDs should be in row names. test change in the comment
 df <- data.frame(row.names = c("geneA", "geneB", "geneC"),
                  sample1 = runif(3, min = -3, max = 3),
                  sample2 = runif(3, min = -3, max = 3),
