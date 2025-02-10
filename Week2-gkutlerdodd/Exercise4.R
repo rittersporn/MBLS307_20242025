@@ -4,7 +4,7 @@ library(readxl)
 library(vioplot)
 
 #4.4
-squid <- read_excel("squid1.xlsx")
+squid <- read_excel("Data/squid1.xlsx")
 glimpse(squid)
 squid <- squid %>% mutate(
   year_factor = factor(year),

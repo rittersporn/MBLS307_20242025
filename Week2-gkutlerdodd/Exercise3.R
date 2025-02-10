@@ -3,7 +3,7 @@ library(tidyverse)
 library(readxl)
 
 #3.5
-whale <- read_excel("whaledata.xls", na="NA")
+whale <- read_excel("Data/whaledata.xls", na="NA")
 
 #3.6
 glimpse(whale)
