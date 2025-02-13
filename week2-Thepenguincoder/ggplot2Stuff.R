@@ -18,3 +18,5 @@ epic_figure
 ggsave(filename = "exercise_plot_making.pdf", plot = epic_figure, device = "pdf", 
        path = "data", width = 250, height = 150, units = "mm", 
        dpi = 500, limitsize = TRUE)
+
+mpg_df %>% select(displ) %>% pull() %>% mean()
