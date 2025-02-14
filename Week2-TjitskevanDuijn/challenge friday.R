@@ -51,13 +51,17 @@ gene_long <- gene %>%
     values_to = "Norm_abundance"
   )
 
-ggplot(gene_long) +
+p <- ggplot(gene_long) +
   geom_boxplot(aes(x = condition, y = Norm_abundance)) +
   labs(y = "Normalized abundance", x = "Sample")+
   geom_jitter(aes(y = Norm_abundance, x = condition), colour = "black", height = 0, 
               width = 0.1, alpha = 0.5)+
-  
-  
+  ggtitle(label = gene$Protein.IDs, subtitle = paste("log 2 ratio is", gene$log2_PAD4_vs_YFP, "and the pvalue is", gene$pval_PAD4_vs_YFP))
 #not very pretty as the data is very clustered. 
 
-str(gene)
+ggsave("output/plot.pdf", plot = p, width = 7, height = 5)
+
+#taking a random one now.
+gene <- sun_ordered[500,]
+#running the gene_long and the ggplot code above
+ggsave("output/plot2.pdf", plot = p, width = 7, height = 5)
