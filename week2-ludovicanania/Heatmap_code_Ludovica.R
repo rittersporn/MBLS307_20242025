@@ -1,4 +1,4 @@
-#heatmap 
+#heatmappps
 install.packages("pheatmap")
 library(pheatmap)
 df <- data.frame(row.names = c("geneA", "geneB", "geneC"),
