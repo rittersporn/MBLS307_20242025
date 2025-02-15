@@ -35,12 +35,5 @@ df <- data.frame(row.names = c("geneA", "geneB", "geneC", "geneD", "geneE", "gen
 pheatmap(df)
 
 # re-draw the heatmap without clustering genes and no border 
-pheatmap(df, border_color = NA, cluster_cols = FALSE)
+pheatmap(df, border_color = NA, cluster_cols = FALSE, filename = "heatmapnoborder.png")
 
-#to save in png format
-# Open a PNG device
-png(filename = "heatmap.png", width = 800, height = 600)
-# Make the heatmap
-pheatmap(df)
-# Close the PNG device
-dev.off()
