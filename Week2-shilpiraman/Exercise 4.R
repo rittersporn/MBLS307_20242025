@@ -85,7 +85,7 @@ dev.off()
 boxplot(squid$DML ~ squid$maturity.stage, data = squid, 
         ylab = "DML", xlab = "Maturity stage")
 
-### installed the package vioplot using install package (vioplot)
+### installed the package vioplot using instal package (vioplot)
 vioplot(squid$DML ~ squid$maturity.stage, data = squid, 
         ylab = "DML", xlab = "Maturity stage",
         col = "lightblue")

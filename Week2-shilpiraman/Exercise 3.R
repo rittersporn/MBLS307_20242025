@@ -128,6 +128,6 @@ num_obs_wn_xtab <- xtabs(~ water.noise, data = whale)
 num_obs_wnmonth_xtab <- xtabs(~ water.noise + month, data = whale)
 
 ### Question 18: Export the dataframe
-exported_file_path <- ".data/whale_num.txt"
+exported_file_path <- "data/whale_num.txt"
 write.table(whale.num, file = exported_file_path, sep = "\t", row.names = FALSE, col.names = TRUE)
 
