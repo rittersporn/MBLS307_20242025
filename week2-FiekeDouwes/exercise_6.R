@@ -11,9 +11,9 @@ circle_diams <- 1:4
 circle_area_func(circle_diams/2)
 
 #2
-F_to_C_converter <- function(F) {
-  C <- (F-32)*5/9
-  sprintf("Fahrenheit: %s is equivalent to %s centigrade.", F, C)
+F_to_C_converter <- function(Fahr) {
+  C <- (Fahr-32)*5/9
+  sprintf("Fahrenheit: %s is equivalent to %s centigrade.", Fahr, C)
 }
 F_to_C_converter(-40)
 
