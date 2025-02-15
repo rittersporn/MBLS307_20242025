@@ -5,7 +5,7 @@ install.packages("tidyverse")
 # load libraries
 library("tidyverse")
 
-# we use the mpg dataset available by default in R.
+# we use the mpg dataset available by default in R
 ##car class is in the column "class",
 ##size of the engine (L) is in the column "displ".
 ggplot(mpg, aes(x = class, y = displ)) +
