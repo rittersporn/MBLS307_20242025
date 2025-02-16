@@ -53,5 +53,5 @@ ggplot(long_format_abundance, aes(x = sample_group, y = abundance)) +
   xlab("Sample") + 
   ylab("Normalized abundance") 
 
-dev.off()
+dev.off() 
 
