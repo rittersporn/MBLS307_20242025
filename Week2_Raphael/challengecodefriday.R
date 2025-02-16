@@ -50,7 +50,7 @@ ggplot(long_format_abundance, aes(x = sample_group, y = abundance)) +
   geom_boxplot() +
   theme_classic() + 
   ggtitle("Normalized abundance of AT1G01080, log2 ratio 2.88, p=0.0009") + 
-  xlab("Sample") + 
+  xlab("Sample") +
   ylab("Normalized abundance") 
 
 dev.off()
