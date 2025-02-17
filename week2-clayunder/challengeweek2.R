@@ -8,7 +8,7 @@ data <- read.table("data/Sun-etal-2021-IP-MS-PAD4-vs-YFP.txt", header=TRUE, sep=
 str(data)
 
 # Subset most differentially abundant proteins
-proteins <- subset(data, log2_PAD4_vs_YFP > 10)
+proteins <- subset(data, log2_PAD4_vs_YFP > 9)
 
 # Volcano plot
 pdf("output/challengevolcanoplot.pdf")
@@ -35,7 +35,7 @@ pdf("output/challengeboxplot.pdf")
 boxplotdata %>% ggplot(aes(x=Sample, y=Abundance)) + 
                         geom_boxplot(outlier.shape = NA) +
                         geom_jitter(width = 0.2, color = "cyan") +
-                        labs(title = "AT1G14810.1, log2 ratio  0.598, p=0.112", 
+                        labs(title = "Normalized abundance of AT1G14810.1, log2 ratio  0.598, p=0.112", 
                         x = "Sample", 
                         y = "Normalized abundance") +
                         theme_minimal()
